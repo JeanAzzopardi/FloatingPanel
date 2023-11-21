@@ -92,10 +92,7 @@ public class FloatingPanelSurfaceView: UIView {
     /// specified by other properties. The reason why they're not be applied to
     /// a content view directly is because it avoids any side-effects to the
     /// content view.
-    public let containerView: UIView = UIView()
-
-    @available(*, unavailable, renamed: "containerView")
-    public var backgroundView: UIView!
+    public let containerView: UIView = UIView()    
 
     private lazy var containerViewTopConstraint = containerView.topAnchor.constraint(equalTo: topAnchor, constant: containerMargins.top)
     private lazy var containerViewHeightConstraint = containerView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 1.0)
